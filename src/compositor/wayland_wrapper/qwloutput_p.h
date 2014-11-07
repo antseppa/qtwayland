@@ -72,6 +72,7 @@ public:
     QSize size() const { return m_geometry.size(); }
 
     void setPhysicalSize(const QSize &size);
+    QSize physicalSize() const;
     void setRefreshRate(int rate);
     int refreshRate() const { return m_refreshRate; }
     void sendOutputOrientation(Qt::ScreenOrientation orientation);

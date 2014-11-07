@@ -127,6 +127,9 @@ public:
     void setOutputRefreshRate(int refreshRate);
     int outputRefreshRate() const;
 
+    void setOutputPhysicalSize(const QSize &size);
+    QSize outputPhysicalSize() const;
+
     QWaylandInputDevice *defaultInputDevice() const;
 
     QWaylandInputPanel *inputPanel() const;

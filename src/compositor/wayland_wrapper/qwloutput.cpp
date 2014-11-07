@@ -90,6 +90,11 @@ void OutputGlobal::setPhysicalSize(const QSize &size)
     }
 }
 
+QSize OutputGlobal::physicalSize() const
+{
+    return m_physicalSize;
+}
+
 void OutputGlobal::setGeometry(const QRect &geometry)
 {
     m_geometry = geometry;

@@ -129,6 +129,8 @@ public:
     QRect outputGeometry() const;
     void setOutputRefreshRate(int rate);
     int outputRefreshRate() const;
+    void setOutputPhysicalSize(const QSize &physicalSize);
+    QSize outputPhysicalSize() const;
 
     void setClientFullScreenHint(bool value);
 

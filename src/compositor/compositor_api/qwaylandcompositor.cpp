@@ -251,6 +251,16 @@ int QWaylandCompositor::outputRefreshRate() const
     return m_compositor->outputRefreshRate();
 }
 
+void QWaylandCompositor::setOutputPhysicalSize(const QSize &size)
+{
+    m_compositor->setOutputPhysicalSize(size);
+}
+
+QSize QWaylandCompositor::outputPhysicalSize() const
+{
+    return m_compositor->outputPhysicalSize();
+}
+
 QWaylandInputDevice *QWaylandCompositor::defaultInputDevice() const
 {
     return m_compositor->defaultInputDevice()->handle();

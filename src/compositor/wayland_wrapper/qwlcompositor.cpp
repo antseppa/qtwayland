@@ -370,6 +370,19 @@ int Compositor::outputRefreshRate() const
     return 0;
 }
 
+void Compositor::setOutputPhysicalSize(const QSize &physicalSize)
+{
+    if (m_output_global)
+        m_output_global->setPhysicalSize(physicalSize);
+}
+
+QSize Compositor::outputPhysicalSize() const
+{
+    if (m_output_global)
+        return m_output_global->physicalSize();
+    return QSize();
+}
+
 void Compositor::setClientFullScreenHint(bool value)
 {
     if (m_windowManagerIntegration)
